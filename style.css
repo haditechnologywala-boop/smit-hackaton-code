@@ -1,0 +1,328 @@
+:root {
+    --primary-color: #0d6efd;
+    --dark-color: #212529;
+    --light-color: #f4f6f9;
+    --success-color: #198754;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --text-color: #343a40;
+    --border-color: #e9ecef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--light-color);
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+#sidebar,
+nav.col-md-3.col-lg-2 {
+    background-color: var(--dark-color) !important;
+    min-height: 100vh;
+    padding: 24px 16px !important;
+}
+
+#sidebar h4,
+nav.col-md-3.col-lg-2 h4 {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #495057;
+    padding-bottom: 20px !important;
+    margin-bottom: 20px;
+}
+
+.sidebar .nav-link,
+nav.col-md-3.col-lg-2 .nav-link {
+    color: #ced4da !important;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+nav.col-md-3.col-lg-2 .nav-link:hover {
+    background-color: #343a40;
+    color: #ffffff !important;
+    transform: translateX(3px);
+}
+
+.sidebar .nav-link.active,
+nav.col-md-3.col-lg-2 .nav-link.active {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+
+.sidebar .nav-link.text-danger,
+nav.col-md-3.col-lg-2 .nav-link.text-danger {
+    color: #ff6b6b !important;
+}
+
+.sidebar .nav-link.text-danger:hover,
+nav.col-md-3.col-lg-2 .nav-link.text-danger:hover {
+    background-color: #3a2024;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    min-height: 100vh;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+main h2 {
+    color: #212529;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+main > p {
+    color: #6c757d;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   DASHBOARD STATISTICS
+========================= */
+
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.row.text-white .card {
+    min-height: 125px;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.row.text-white .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.card h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.bg-primary {
+    background-color: #0d6efd !important;
+}
+
+.bg-success {
+    background-color: #198754 !important;
+}
+
+.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+.card.shadow-sm.p-3,
+.card.shadow-sm.p-4 {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px !important;
+}
+
+.card > h5 {
+    color: #212529;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.table {
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.table thead th {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 14px 12px;
+    white-space: nowrap;
+}
+
+.table tbody td {
+    padding: 14px 12px;
+    font-size: 14px;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.badge {
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 15px;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.btn-success:hover,
+.btn-danger:hover {
+    transform: translateY(-1px);
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+/* =========================
+   FORMS AND SETTINGS
+========================= */
+
+.form-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #343a40;
+}
+
+.form-control,
+.form-select {
+    min-height: 43px;
+    border: 1px solid #dee2e6;
+    border-radius: 7px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+hr {
+    border-color: #dee2e6;
+    margin: 25px 0;
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+body:has(.container > .row.justify-content-center) {
+    background: linear-gradient(135deg, #e9f1ff, #f8f9fa);
+}
+
+.container > .row.justify-content-center .card {
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10) !important;
+}
+
+.container > .row.justify-content-center .card-body {
+    padding: 35px !important;
+}
+
+.container > .row.justify-content-center h2 {
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+.container > .row.justify-content-center .btn {
+    min-height: 45px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 767px) {
+
+    #sidebar,
+    nav.col-md-3.col-lg-2 {
+        min-height: auto;
+        height: auto;
+        width: 100%;
+    }
+
+    #sidebar h4,
+    nav.col-md-3.col-lg-2 h4 {
+        text-align: left !important;
+        padding-top: 10px !important;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0 !important;
+        padding: 22px 15px !important;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    .card.shadow-sm.p-3,
+    .card.shadow-sm.p-4 {
+        padding: 16px !important;
+    }
+
+    .row.text-white .card {
+        min-height: 110px;
+    }
+
+    .table {
+        min-width: 650px;
+    }
+
+    .container > .row.justify-content-center .card-body {
+        padding: 25px !important;
+    }
+}
